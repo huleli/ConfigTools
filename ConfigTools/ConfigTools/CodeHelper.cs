@@ -27,7 +27,7 @@ namespace ConfigTools
                     sw.WriteLine("");
                     sw.WriteLine("namespace Configs");
                     sw.WriteLine("{");
-                    sw.WriteLine("    public class {0}", pTableMeta.ClassName);
+                    sw.WriteLine("    public partial class {0}", pTableMeta.ClassName);
                     sw.WriteLine("    {");
                     if (pTableMeta.CheckTypeIsMap())
                     {
