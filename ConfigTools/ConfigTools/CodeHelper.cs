@@ -41,7 +41,7 @@ namespace ConfigTools
                         sw.WriteLine("        public List<{0}> mDataList;", pTableMeta.DataName);
                     sw.WriteLine("    }");
                     sw.WriteLine();
-                    sw.WriteLine("    public class {0}", pTableMeta.DataName);
+                    sw.WriteLine("    public partial class {0}", pTableMeta.DataName);
                     sw.WriteLine("    {");
                     foreach (var field in pTableMeta.Fields)
                     {
